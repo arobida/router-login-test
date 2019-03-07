@@ -10,7 +10,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: 'fuck',
+      title: 'WTF!',
       loggedIn: false
     };
     console.log(this.state.title);
@@ -40,7 +40,7 @@ class App extends React.Component {
             <NavLink to="/user/Andrew" exact activeStyle={{ color: 'green' }}>Andrew</NavLink>
           </li>
         </ul>
-        <Prompt 
+        <Prompt
         when={!this.state.loggedIn}
         message={(location) => {
           return location.pathname.startsWith('/user') ? 'You must be logged in to view this content' : true
